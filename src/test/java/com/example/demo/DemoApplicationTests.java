@@ -11,11 +11,15 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class DemoApplicationTests {
 
 	private static final Logger logger = LoggerFactory.getLogger(DemoApplicationTests.class);
-	private
 	@Test
 	void contextLoads() {
 		logger.debug("Hi it's a successful test");
 		assertTrue(true);
 	}
 
+	@Test
+	public void successfulTest(){
+		logger.info("Hi it's a successful test on jenkins");
+		assertTrue(true);
+	}
 }
